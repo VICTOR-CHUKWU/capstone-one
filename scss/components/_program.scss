@@ -4,7 +4,6 @@
   .card {
     position: relative;
     background: rgb(62, 66, 75);
-    // background: #d3d3d3;
   }
 
   .icons {
@@ -19,5 +18,12 @@
 
   .underline-text {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icons {
+    font-size: 1.5rem;
+    margin-right: 0.4rem !important;
   }
 }
