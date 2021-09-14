@@ -8,7 +8,6 @@ const displaySpeaker = document.querySelector('.speaker-info');
 const width = window.innerWidth;
 // eslint-disable-next-line prefer-const
 let showMore = false;
-console.log(width);
 
 const featured = [
   {
@@ -71,7 +70,6 @@ function displayspeakers(featured) {
   // eslint-disable-next-line no-nested-ternary
   const me = width < 767 ? featured.slice(0, 3)
     : !showMore ? featured.slice(0) : featured.slice(0);
-  console.log(me, showMore);
   let display = '';
   // eslint-disable-next-line array-callback-return
   me.map((speaker) => {
