@@ -68,8 +68,23 @@ const featured = [
 
 function displayspeakers(featured) {
   // eslint-disable-next-line no-nested-ternary
-  const me = width < 767 ? featured.slice(0, 3)
-    : !showMore ? featured.slice(0) : featured.slice(0);
+  // const me = width < 767 ? featured.slice(0, 3)
+  //   : showMore ? featured.slice(0) : featured.slice(0);
+  // let me = featured.slice(0);
+  // if (width < 767) {
+  //   me = featured.slice(0, 3);
+  // }
+  // if (showMore) {
+  //   me = featured.slice(0);
+  // }
+  let endIndex = width < 767 ? 3 : undefined;
+  if (showMore) {
+    moreBtn.innerHTML = 'Show Less';
+    endIndex = undefined;
+  } else {
+    moreBtn.innerHTML = 'Show More';
+  }
+  const me = featured.slice(0, endIndex);
   let display = '';
   // eslint-disable-next-line array-callback-return
   me.map((speaker) => {
