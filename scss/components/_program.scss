@@ -1,0 +1,23 @@
+.program {
+  position: relative;
+
+  .card {
+    position: relative;
+    background: rgb(62, 66, 75);
+    // background: #d3d3d3;
+  }
+
+  .icons {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.7rem;
+  }
+
+  .card-title {
+    color: #ec5242;
+  }
+
+  .underline-text {
+    text-decoration: underline;
+  }
+}

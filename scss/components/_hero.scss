@@ -1,0 +1,15 @@
+.hero {
+  margin-top: 15rem !important;
+  width: 100%;
+
+  &-inner {
+    margin: 0 8rem;
+    max-width: 750px;
+  }
+}
+
+.para-container {
+  border: 1px solid whitesmoke;
+  max-width: 700px;
+  padding: 0.5rem;
+}

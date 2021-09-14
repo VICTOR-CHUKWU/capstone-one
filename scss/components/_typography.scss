@@ -1,0 +1,41 @@
+.display {
+  &-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "lato", sans-serif;
+    background-image: linear-gradient(75deg, #ec5242, #272a31, #ec5242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &-hello {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: "lato", sans-serif;
+    color: #ec5242;
+  }
+
+  &-paragraph {
+    font-size: 1rem;
+    color: #272a31;
+    font-family: "lato", sans-serif;
+  }
+
+  &-h2 {
+    color: #272a31;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "lato", sans-serif;
+  }
+
+  &-h5 {
+    font-size: 1.5rem;
+    color: #272a31;
+    font-family: "lato", sans-serif;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+}
