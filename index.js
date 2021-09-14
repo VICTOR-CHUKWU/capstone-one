@@ -2,9 +2,12 @@ const ToggleBar = document.querySelector('.toggle-button');
 const body = document.querySelector('body');
 const sideBar = document.querySelector('.sidebar');
 const cancel = document.querySelector('.cancel');
+const moreBtn = document.querySelector('.see-more');
 const anchorLink = document.querySelectorAll('.anchor-link');
 const displaySpeaker = document.querySelector('.speaker-info');
 const width = window.innerWidth;
+// eslint-disable-next-line prefer-const
+let showMore = false;
 console.log(width);
 
 const featured = [
@@ -65,16 +68,13 @@ const featured = [
 ];
 
 function displayspeakers(featured) {
-  if (width <= 767) {
-    featured.slice(0, 3);
-    console.log('me', featured);
-  }
+  // eslint-disable-next-line no-nested-ternary
+  const me = width < 767 ? featured.slice(0, 3)
+    : !showMore ? featured.slice(0) : featured.slice(0);
+  console.log(me, showMore);
   let display = '';
   // eslint-disable-next-line array-callback-return
-  featured.map((speaker) => {
-    // if (width < 767) {
-    //   speaker.slice(0, 3);
-    // }
+  me.map((speaker) => {
     const {
       title, subtitle, text, image,
     } = speaker;
@@ -90,6 +90,8 @@ function displayspeakers(featured) {
      `;
   });
   displaySpeaker.innerHTML = display;
+  // eslint-disable-next-line no-use-before-define
+  // moreShow();
 }
 
 function openSideBar() {
@@ -102,6 +104,11 @@ function closeSideBar() {
   body.classList.remove('noscroll');
 }
 
+function moreShow() {
+  showMore = !showMore;
+  displayspeakers(featured);
+}
+
 anchorLink.forEach((anchor) => {
   anchor.addEventListener('click', closeSideBar);
 });
@@ -109,3 +116,4 @@ anchorLink.forEach((anchor) => {
 ToggleBar.addEventListener('click', openSideBar);
 cancel.addEventListener('click', closeSideBar);
 document.addEventListener('DOMContentLoaded', displayspeakers(featured));
+moreBtn.addEventListener('click', moreShow);
