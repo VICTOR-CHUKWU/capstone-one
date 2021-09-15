@@ -4,7 +4,10 @@
   .card {
     position: relative;
     background: rgb(62, 66, 75);
-    // background: #d3d3d3;
+  }
+
+  .card-body {
+    position: relative;
   }
 
   .icons {
@@ -19,5 +22,35 @@
 
   .underline-text {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icon {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    width: 45% !important;
+    align-items: center !important;
+
+    h5 {
+      width: 50% !important;
+      font-size: 0.8rem;
+      text-align: left !important;
+    }
+  }
+
+  .icons {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-text {
+    width: 50% !important;
+    text-align: center !important;
   }
 }

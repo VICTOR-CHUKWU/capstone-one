@@ -1,4 +1,5 @@
 @use 'customize';
+@use 'components/mixins';
 
 // IMPORT COMPONENTS
 
@@ -7,3 +8,4 @@
 @use 'components/hero';
 @use 'components/program';
 @use 'components/footer';
+@use 'components/sidebar';

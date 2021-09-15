@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <title>capstone</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
 </head>
 
 <body>
     <div class="fixed-top header">
-        <header class="bg-dark d-flex align-items-center justify-content-end px-5 py-3 container-fluid">
+        <header class="bg-dark d-none d-md-flex align-items-center justify-content-end px-5 py-3 container-fluid">
             <nav class="d-flex mr-5 pr-5">
                 <a href="" class="mx-3 text-white"><i class="fab fa-facebook"></i></a>
                 <a href="" class="mx-3 text-white"><i class="fab fa-twitter"></i></a>
@@ -22,16 +22,16 @@
 
             </nav>
         </header>
-        <div class="bg-light text-dark container-fluid px-5 py-3 shadow">
+        <div class=" d-none d-md-block bg-light text-dark container-fluid px-5 py-3 shadow">
             <div class="row">
                 <div class="col-4 d-flex align-items-center justify-content-center">
-                    <div class="d-flex flex-column">
+                    <a href="index.html" class="d-flex flex-column">
                         <span>CC Global</span>
                         <span>Submit 2015</span>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-8 d-flex align-items-center justify-content-center">
-                    <a href="" class="mx-2  a-link">About</a>
+                    <a href="about.html" class="mx-2  a-link">About</a>
                     <a href="" class="mx-2  a-link">Program</a>
                     <a href="" class="mx-2  a-link">Join</a>
                     <a href="" class="mx-2  a-link">Sponsor</a>
@@ -41,14 +41,33 @@
             </div>
 
         </div>
+        <div class="d-block d-md-none bg-light">
+            <div class="d-flex flex-column justify-content-start mx-4 toggle-button mt-4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
-    <section class="hero container-fluid">
-        <div class="hero-inner">
+    <section class="sidebar">
+        <div class="sidebar-inner">
+          <div class="sidebar-cancel">
+            <button class="cancel" type="button">&times;</button>
+          </div>
+          <div class="sidebar-menu">
+            <a href="index.html" class="anchor-link">Home</a>
+            <a href="about.html" class="anchor-link">About</a>
+            <a href="#program" class="anchor-link">Program</a>
+          </div>
+        </div>
+      </section>
+    <section class="hero container-fluid py-5">
+        <div class="hero-inner py-5">
             <h4 class="display-hello">"Hello! Sharing World"</h4>
-           <div>
+           <div class="mx-0">
             <h1 class="text-uppercase display-title">creative commons global summit 2015</h1>
            </div>
-            <div class="para-container">
+            <div class="para-container bg-light">
                 <p class="display-paragrapg">a joyfull celebration believing in the value of openness and Sharing and
                     creating a positive change with people over 80 countries is taking place in october in korea</p>
             </div>
@@ -57,72 +76,80 @@
         </div>
 
     </section>
-    <section class="program mt-4 bg-dark py-4 container-fluid">
+    <section class="program mt-4 bg-dark py-4 container-fluid" id="program">
         <h4 class="text-center text-white fw-bold text-capitalize mt-4">main program</h4>
         <div class="horizontal-line mb-4"></div>
         <div class="row d-flex justify-content-center mb-5">
-            <div class="col-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon d-flex justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="card  mb-3">
+                    <div class="card-body ">
+                        <div class="icon d-flex flex-column justify-content-center">
                             <i class="fas fa-gifts icons"></i>
+                            <h5 class="card-title text-center ml-3">forum</h5>
                         </div>
-                        <h5 class="card-title text-center">forum</h5>
+                        
                         <p class="card-text text-center text-white">Listen to the speakers from various countries about
                             the messages of sharing and opening.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon d-flex justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="card  mb-3">
+                    <div class="card-body ">
+                        <div class="icon d-flex flex-column  justify-content-center">
                             <i class="fab fa-wolf-pack-battalion icons"></i>
+                            <h5 class="card-title text-center">Lecture</h5>
                         </div>
-                        <h5 class="card-title text-center">Lecture</h5>
+                       
                         <p class="card-text text-center text-white">Listen to the speakers from various countries about
                             the messages of sharing and opening.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="card mb-3">
                     <div class="card-body">
-                        <div class="icon d-flex justify-content-center">
+                        <div class="icon d-flex flex-column justify-content-center">
                             <i class="fas fa-landmark icons"></i>
+                            <h5 class="card-title text-center">Workshop</h5>
                         </div>
-                        <h5 class="card-title text-center">Workshop</h5>
+                      
                         <p class="card-text text-center text-white">Listen to the speakers from various countries about
                             the messages of sharing and opening.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="icon d-flex justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2">
+                <div class="card mb-3">
+                    <div class="card-body ">
+                        <div class="icon d-flex flex-column justify-content-center">
                             <i class="fas fa-handshake icons"></i>
+                            <h5 class="card-title text-center">Unity</h5>
                         </div>
-                        <h5 class="card-title text-center">Unity</h5>
+                       
                         <p class="card-text text-center text-white">Listen to the speakers from various countries about
                             the messages of sharing and opening.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-md-4 col-lg-2">
                 <div class="card">
-                    <div class="card-body">
-                        <div class="icon d-flex justify-content-center">
+                    <div class="card-body ">
+                        <div class="icon d-flex  flex-column justify-content-center">
                             <i class="fas fa-people-carry icons"></i>
+                            <h5 class="card-title text-center">Agriculture</h5>
                         </div>
-                        <h5 class="card-title text-center">Agriculture</h5>
+                        
                         <p class="card-text text-center text-white">Listen to the speakers from various countries about
                             the messages of sharing and opening.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="text-white text-center text-uppercase my-3 underline-text">See the whole Programm</p>
+        <p class="text-white text-center text-uppercase my-3 underline-text hide-mobile">See the whole Programm</p>
+        <div class="join text-white text-capitalize show-mobile">
+            join CC Global Submit 2015
+        </div>
     </section>
     <section class="speakers mt-4">
         <h5 class="text-center text-dark">Featured Speakers</h5>
@@ -130,26 +157,30 @@
         <div class="row speaker-info mt-3">
 
         </div>
+        <div class="d-grid gap-2 mx-3 my-3">
+            <button class="btn d-block d-md-none btn-light border-light shadow"><span class="see-more">See More</span> <i class="fas fa-angle-down text-danger"></i></button>
+          </div>
+       
     </section>
     <footer >
         <div class="footer-upper py-4  mx-0 mb-3">
             <h5 class="text-center ">Patners</h5>
             <div class="horizontal-line mb-4"></div>
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-4 col-lg-2"><div class="companies__logo"> <img src="/image/company-1.svg" alt="company logo" class="img-fluid"></div></div>
-                <div class="col-md-4 col-lg-2"><div class="companies__logo "> <img src="/image/company-4.svg" alt="company logo" class="img-fluid"></div></div>
-                <div class="col-md-4 col-lg-2"><div class="companies__logo "> <img src="/image/company-5.svg" alt="company logo" class="img-fluid"></div></div>
-                <div class="col-md-4 col-lg-2"><div class="companies__logo ">  <img src="/image/company-6.svg" alt="company logo" class="img-fluid"></div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="companies__logo"> <img src="./image/company-1.svg" alt="company logo" class="img-fluid"></div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="companies__logo "> <img src="./image/company-4.svg" alt="company logo" class="img-fluid"></div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="companies__logo "> <img src="./image/company-5.svg" alt="company logo" class="img-fluid"></div></div>
+                <div class="col-6 col-md-4 col-lg-2"><div class="companies__logo ">  <img src="./image/company-6.svg" alt="company logo" class="img-fluid"></div></div>
               </div>
         </div>
         <div class="row footer-down mt-5 mb-3">
-            <div class="col-4 d-flex justify-content-end">
+            <div class=" col-6 col-md-4 d-flex justify-content-end">
                 <div class="d-flex flex-column">
                     <span class="dark-span">Creative Common</span>
                     <span class="dark-span">Korea</span>
                 </div>
             </div>
-            <div class="col-8 d-flex justify-content-start ml-5">
+            <div class="col-6 col-md-8 d-flex justify-content-start">
                 <h5 class="text-capitalize ml-5">2015 creative common, some right reserverd</h5>
             </div>
         </div>
@@ -157,6 +188,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+        <script src="index.js"></script>
 </body>
 
 </html>
