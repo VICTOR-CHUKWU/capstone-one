@@ -11256,8 +11256,15 @@ a {
 .img-speaker {
   width: 200px !important;
   max-width: 200px;
-  height: auto;
+  height: 100%;
   margin: 0 0.6rem;
+}
+
+.text-speaker {
+  height: 100%;
+  max-width: 250px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 .present-profile h4 {
@@ -11274,6 +11281,19 @@ a {
 @media screen and (max-width: 767px) {
   .show-mobile {
     display: block;
+  }
+
+  .speaker-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .present-profile {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .hide-mobile {
@@ -11348,14 +11368,31 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .icon {
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    width: 45% !important;
+    align-items: center !important;
+  }
+  .icon h5 {
+    width: 50% !important;
+    font-size: 0.8rem;
+    text-align: left !important;
+  }
+
   .icons {
     font-size: 1.5rem;
-    margin-right: 0.4rem !important;
   }
 
   .card-body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-text {
+    width: 50% !important;
+    text-align: center !important;
   }
 }
 footer {

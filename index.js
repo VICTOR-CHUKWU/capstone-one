@@ -96,7 +96,7 @@ function displayspeakers(featured) {
       <div class='speaker-img-cont'>
       <img src='${image.src}' alt='${image.alt}' class='img-speaker'>
       </div>
-       <div class='d-flex flex-column'>
+       <div class='d-flex flex-column text-speaker'>
        <h4>${title}</h4>
        <h5>${subtitle}</h5>
        <p>${text}</p>

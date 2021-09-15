@@ -93,8 +93,15 @@ a {
 .img-speaker {
   width: 200px !important;
   max-width: 200px;
-  height: auto;
+  height: 100%;
   margin: 0 0.6rem;
+}
+
+.text-speaker {
+  height: 100%;
+  max-width: 250px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 .present-profile {
@@ -115,6 +122,20 @@ a {
   .show-mobile {
     display: block;
   }
+
+  .speaker-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .present-profile {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
 
   .hide-mobile {
     display: none;
