@@ -6,6 +6,10 @@
     background: rgb(62, 66, 75);
   }
 
+  .card-body {
+    position: relative;
+  }
+
   .icons {
     font-size: 2rem;
     color: white;
@@ -25,5 +29,10 @@
   .icons {
     font-size: 1.5rem;
     margin-right: 0.4rem !important;
+  }
+
+  .card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

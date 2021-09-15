@@ -11232,7 +11232,7 @@ a {
 }
 .hasHover .abso {
   position: absolute;
-  background: violet;
+  background: #ec5242;
   top: 0;
   left: 0;
   right: 0;
@@ -11256,7 +11256,7 @@ a {
 .img-speaker {
   width: 200px !important;
   max-width: 200px;
-  height: 140px;
+  height: auto;
   margin: 0 0.6rem;
 }
 
@@ -11332,6 +11332,9 @@ a {
   position: relative;
   background: #3e424b;
 }
+.program .card-body {
+  position: relative;
+}
 .program .icons {
   font-size: 2rem;
   color: white;
@@ -11348,6 +11351,11 @@ a {
   .icons {
     font-size: 1.5rem;
     margin-right: 0.4rem !important;
+  }
+
+  .card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 footer {

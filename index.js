@@ -15,7 +15,7 @@ const featured = [
     subtitle: 'His president',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1557296387-5358ad7997bb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop',
+      src: 'https://summit.cckorea.org/images/base/speaker_01.png',
       alt: 'president',
     },
   },
@@ -24,7 +24,7 @@ const featured = [
     subtitle: 'chairman',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop',
+      src: 'https://summit.cckorea.org/images/base/speaker_02.png',
       alt: 'president',
     },
   },
@@ -33,7 +33,7 @@ const featured = [
     subtitle: 'His president',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1604426633861-11b2faead63c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop',
+      src: 'https://summit.cckorea.org/images/base/speaker_03.png',
       alt: 'president',
     },
   },
@@ -42,7 +42,7 @@ const featured = [
     subtitle: 'His president',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFjZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      src: 'https://summit.cckorea.org/images/base/speaker_04.png',
       alt: 'president',
     },
   },
@@ -51,7 +51,7 @@ const featured = [
     subtitle: 'His president',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1593529467220-9d721ceb9a78?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+      src: 'https://summit.cckorea.org/images/base/speaker_05.png',
       alt: 'president',
     },
   },
@@ -60,7 +60,7 @@ const featured = [
     subtitle: 'His president',
     text: 'If you’re looking to get out of the big city and back into nature, the annual Kwita Izina gorilla-naming ceremony is a special time to visit Volcanoes National Park.',
     image: {
-      src: 'https://images.unsplash.com/photo-1544348817-5f2cf14b88c8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhY2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop',
+      src: 'https://summit.cckorea.org/images/base/speaker_06.png',
       alt: 'president',
     },
   },
@@ -92,8 +92,10 @@ function displayspeakers(featured) {
       title, subtitle, text, image,
     } = speaker;
     display += `
-     <div class="col-12 col-md-6 d-flex align-items-center justify-content-center present-profile p-4">
-       <img src='${image.src}' alt='${image.alt}' class='img-speaker'>
+     <div class="col-12 col-md-6 d-flex present-profile p-4">
+      <div class='speaker-img-cont'>
+      <img src='${image.src}' alt='${image.alt}' class='img-speaker'>
+      </div>
        <div class='d-flex flex-column'>
        <h4>${title}</h4>
        <h5>${subtitle}</h5>
